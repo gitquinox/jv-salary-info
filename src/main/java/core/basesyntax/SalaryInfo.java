@@ -32,8 +32,7 @@ public class SalaryInfo {
             }
         }
 
-        return String.format(Locale.US,
-                "Report for period %s - %s\r\nJohn - %d\r\nAndrew - %d\r\nKate - %d",
+        return String.format("Report for period %s - %s%nJohn - %d%nAndrew - %d%nKate - %d",
                 dateFrom, dateTo, johnSalary, andrewSalary, kateSalary);
     }
 }
