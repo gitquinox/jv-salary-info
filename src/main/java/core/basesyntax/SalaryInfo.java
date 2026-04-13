@@ -12,7 +12,7 @@ public class SalaryInfo {
         LocalDate toDate = LocalDate.parse(dateTo, formatter);
 
         StringBuilder report = new StringBuilder();
-        report.append(String.format(Locale.US, "Report for period %s - %s", fromDate, toDate));
+        report.append(String.format(Locale.US, "Report for period %s - %s", dateFrom, dateTo));
         for (String name : names) {
             int currentNameSalary = 0;
             for (String emploData : data) {
